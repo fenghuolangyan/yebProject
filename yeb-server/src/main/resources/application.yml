@@ -8,3 +8,12 @@ spring:
     publisher-confirm-type: correlated
     #消息失败回调
     publisher-returns: true
+#minio文件客户端配置
+minio:
+  endpoint: 192.168.10.100
+  port: 9000
+  accessKey: AKIAIOSFODNN7EXAMPLE
+  secretKey: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+  secure: false
+  bucketName: "lwf"
+  configDir: "/data/"

@@ -7,7 +7,6 @@
         <module>yeb-server</module>
         <module>yeb-gateway</module>
         <module>yeb-common</module>
-        <module>yeb-acl</module>
         <module>yeb-mail</module>
     </modules>
     <parent>
