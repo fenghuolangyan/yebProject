@@ -1,0 +1,29 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    protocol: smtp
+    #QQ特征码
+    password: nzmvexjathghbdga
+    default-encoding: utf-8
+    #发送人邮箱
+    username: 779338316@qq.com
+    port: 25
+
+  rabbitmq:
+    host: 192.168.127.22
+    port: 5672
+    username: guest
+    password: guest
+
+  #redis
+  redis:
+    host: 192.168.127.22
+    port: 6379
+    database: 0
+    timeout: 10000ms
+    lettuce:
+      pool:
+        max-active: 1024
+        max-wait: 10000ms
+        max-idle: 200
+        min-idle: 5

@@ -1,0 +1,10 @@
+spring:
+  rabbitmq:
+    host: 192.168.127.22
+    port: 5672
+    username: guest
+    password: guest
+    #消息确认回调
+    publisher-confirm-type: correlated
+    #消息失败回调
+    publisher-returns: true

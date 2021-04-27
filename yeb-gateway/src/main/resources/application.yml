@@ -1,0 +1,35 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        #将路径为Path=/api/product转发gulimall-product微服务
+#                                 - Path=/api/product/**
+#        - id: acl_route
+#          uri: lb://service-acl
+#          predicates:
+#            - Path=/*/acl/**
+#          filters:
+#            - RewritePath=/api/(?<segment>/?.*),/$\{segment}
+
+        #将主机地址为xbz.com转发至service-acl
+        - id: admin_host
+          uri: lb://yeb-server
+          predicates:
+            - Host=xbz.com
+
+        #将主机地址为**.xbz.com转发至service-acl
+#        - id: front_host
+#          uri: lb://journey-front
+#          predicates:
+#            - Host=xq.xbz.com
+#
+#        - id: front_statistics
+#          uri: lb://journey-statistics
+#          predicates:
+#            - Host=sa.xbz.com
+
+
+
+
+
+
